@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+/* ======================================================== */
+/* 🌟 LUXURY EDITORIAL SCROLLBAR STYLING                     */
+/* ======================================================== */
+
+/* Global WebKit Scrollbars (Chrome, Safari, Edge, Opera) */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.7);
+  border-radius: 9999px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(245, 158, 11, 0.45), rgba(244, 63, 94, 0.45));
+  border-radius: 9999px;
+  border: 1.5px solid rgba(15, 23, 42, 0.85);
+  transition: all 0.25s ease;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(245, 158, 11, 0.9), rgba(244, 63, 94, 0.9));
+  box-shadow: 0 0 10px rgba(245, 158, 11, 0.5);
+}
+
+/* Firefox Scrollbars */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: rgba(245, 158, 11, 0.5) rgba(15, 23, 42, 0.7);
+}
+
+/* Sleek Gold Horizontal Scrollbar Utility */
+.scrollbar-gold::-webkit-scrollbar {
+  height: 5px;
+  width: 5px;
+}
+.scrollbar-gold::-webkit-scrollbar-track {
+  background: rgba(15, 23, 42, 0.6);
+  border-radius: 9999px;
+}
+.scrollbar-gold::-webkit-scrollbar-thumb {
+  background: rgba(245, 158, 11, 0.6);
+  border-radius: 9999px;
+  border: 1px solid rgba(15, 23, 42, 0.8);
+}
+.scrollbar-gold::-webkit-scrollbar-thumb:hover {
+  background: rgba(245, 158, 11, 1);
+  box-shadow: 0 0 8px rgba(245, 158, 11, 0.8);
+}
+
+/* Custom Scrollbar for Wardrobe & Modals */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: rgba(2, 6, 23, 0.75);
+  border-radius: 8px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, rgba(245, 158, 11, 0.5), rgba(217, 70, 239, 0.4));
+  border-radius: 8px;
+  border: 2px solid rgba(15, 23, 42, 0.9);
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, rgba(245, 158, 11, 0.9), rgba(217, 70, 239, 0.8));
+}
+
+@keyframes runwayBreathe {
+  0%, 100% {
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    transform: translateY(-2.5px) scale(1.005);
+  }
+}
+
+.animate-runway-breathe {
+  animation: runwayBreathe 5.5s ease-in-out infinite;
+}
+
